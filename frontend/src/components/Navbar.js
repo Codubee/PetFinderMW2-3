@@ -5,17 +5,16 @@ import {Navbar, NavbarBrand,Nav, NavItem, NavLink} from "reactstrap";
 function NavBar() {
     return (
         <>
-            <Navbar color="light">
+            <Navbar color="dark">
                 <Nav>
-                <NavbarBrand href="/">PetFinder</NavbarBrand>
+                <NavbarBrand href="/" style={{color: "white"}}>PetFinder</NavbarBrand>
                 <NavItem>
-                    <NavLink href="/">Home</NavLink>
+                    <NavLink href="/home/" style={{color: "white"}}>Home</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/">Match</NavLink>
+                    <NavLink href="/match/" style={{color: "white"}}>Match</NavLink>
                 </NavItem> 
-                </Nav>
-                
+                </Nav>               
             </Navbar>
         </>
     )
