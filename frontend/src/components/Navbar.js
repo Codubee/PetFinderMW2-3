@@ -7,9 +7,9 @@ function NavBar() {
         <>
             <Navbar color="dark">
                 <Nav>
-                <NavbarBrand href="/" style={{color: "white"}}>PetFinder</NavbarBrand>
+                <NavbarBrand style={{color: "white"}}>PetFinder</NavbarBrand>
                 <NavItem>
-                    <NavLink href="/home/" style={{color: "white"}}>Home</NavLink>
+                    <NavLink href="/" style={{color: "white"}}>Home</NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink href="/match/" style={{color: "white"}}>Match</NavLink>
