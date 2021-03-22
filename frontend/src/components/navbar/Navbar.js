@@ -2,17 +2,19 @@ import React from "react";
 
 import {Navbar, NavbarBrand,Nav, NavItem, NavLink} from "reactstrap";
 
+import './style.css'
+
 function NavBar() {
     return (
         <>
-            <Navbar color="dark">
+            <Navbar className="navbar">
                 <Nav>
-                <NavbarBrand style={{color: "white"}}>PetFinder</NavbarBrand>
+                <NavbarBrand className="navbrand">PetFinder</NavbarBrand>
                 <NavItem>
-                    <NavLink href="/" style={{color: "white"}}>Home</NavLink>
+                    <NavLink href="/" className="navlink">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/match/" style={{color: "white"}}>Match</NavLink>
+                    <NavLink href="/match/" className="navlink">Match</NavLink>
                 </NavItem> 
                 </Nav>               
             </Navbar>
