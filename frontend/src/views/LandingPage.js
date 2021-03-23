@@ -1,9 +1,10 @@
 import React from 'react';
+import Tools from '../components/Tools'
 
 function LandingPage(){
     return(
         <div>
-            {/* Insert your created components here */}
+            {/* Insert your created components here */ <Tools/>}
             <h1>Landing Page Component</h1>
         </div>
     )
