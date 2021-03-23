@@ -1,9 +1,17 @@
-.navlink {
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
+.navbrand {
+  font-family: "Pacifico";
   color: white;
 }
 
-.navbrand {
+.navlink {
+  font-family: "Pacifico";
   color: white;
+}
+
+.nav {
+  width: 100%;
 }
 
 .navbar {
