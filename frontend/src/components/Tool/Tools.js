@@ -21,7 +21,7 @@ function Tools() {
                         <CardBody className="cardbackground">
                         <CardTitle className="cardtitle" tag="h5">React</CardTitle>
                         </CardBody>
-                        <img src={reactLogo} alt="Card image cap" class="centerlogo"/>
+                        <img src={reactLogo} alt="Card image cap" className="centerlogo"/>
                     </Card>
                 </Col>
                 <Col sm="1">
@@ -29,7 +29,7 @@ function Tools() {
                         <CardBody className="cardbackground">
                         <CardTitle className="cardtitle" tag="h5">NodeJS</CardTitle>
                         </CardBody>
-                        <img src={nodeLogo} alt="Card image cap" class="centerlogo"/>
+                        <img src={nodeLogo} alt="Card image cap" className="centerlogo"/>
                     </Card>
                 </Col>
                 <Col sm="1">
@@ -37,7 +37,7 @@ function Tools() {
                         <CardBody className="cardbackground">
                         <CardTitle className="cardtitle" tag="h5">Jira</CardTitle>
                         </CardBody>
-                        <img src={jiraLogo} alt="Card image cap" class="centerlogo"/>
+                        <img src={jiraLogo} alt="Card image cap" className="centerlogo"/>
                     </Card>
                 </Col>
                 <Col sm="1">
@@ -45,7 +45,7 @@ function Tools() {
                         <CardBody className="cardbackground">
                         <CardTitle className="cardtitle" tag="h5">Postman</CardTitle>
                         </CardBody>
-                        <img src={postmanLogo} alt="Card image cap" class="centerlogo"/>
+                        <img src={postmanLogo} alt="Card image cap" className="centerlogo"/>
                     </Card>
                 </Col>
                 <Col sm="1">
@@ -53,7 +53,7 @@ function Tools() {
                         <CardBody className="cardbackground">
                         <CardTitle className="cardtitle" tag="h5">AWS</CardTitle>
                         </CardBody>
-                        <img src={awsLogo} alt="Card image cap" class="centerlogo"/>
+                        <img src={awsLogo} alt="Card image cap" className="centerlogo"/>
                     </Card>
                 </Col>
                 <Col sm="1">
@@ -61,7 +61,7 @@ function Tools() {
                         <CardBody className="cardbackground">
                         <CardTitle className="cardtitle" tag="h5">Heroku</CardTitle>
                         </CardBody>
-                        <img src={herokuLogo} alt="Card image cap" class="center"/>
+                        <img src={herokuLogo} alt="Card image cap" className="center"/>
                     </Card>
                 </Col>
                 </Row>
