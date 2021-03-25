@@ -2,7 +2,7 @@ import React from "react";
 
 import {Navbar, NavbarBrand,Nav, NavItem, NavLink} from "reactstrap";
 
-import './style.css'
+import '../style/style.css'
 
 function NavBar() {
     return (

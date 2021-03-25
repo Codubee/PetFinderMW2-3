@@ -2,7 +2,7 @@ import React from 'react'
 
 import {fireEvent, render, screen} from '@testing-library/react'
 
-import Navbar from '../components/navbar/Navbar'
+import Navbar from '../components/Navbar'
 
 test('Navbar is rendered correctly', ()=>{
     render(<Navbar />);
