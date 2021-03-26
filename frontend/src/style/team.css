@@ -1,0 +1,20 @@
+.centercard{
+    display: block;
+    margin-bottom: 100px;
+}
+
+.cardtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.cardtext{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.cardbackground{
+    border: 4px solid #A6E2DC;
+    background-color: #ECF87F;
+}
+
