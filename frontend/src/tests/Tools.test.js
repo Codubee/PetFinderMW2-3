@@ -27,21 +27,3 @@ test('renders card titles correctly', () => {
     expect(CardTitle5).toBeInTheDocument();
     expect(CardTitle6).toBeInTheDocument();
 });
-
-test('renders card images correctly', () => {
-//     render(<Tools />);
-
-//     const CardTitle1 = screen.get
-//     const CardTitle2 = screen.getByText('NodeJS')
-//     const CardTitle3 = screen.getByText('Jira')
-//     const CardTitle4 = screen.getByText('Postman')
-//     const CardTitle5 = screen.getByText('AWS')
-//     const CardTitle6 = screen.getByText('Heroku')
-
-//     expect(CardTitle1).toBeInTheDocument();
-//     expect(CardTitle2).toBeInTheDocument();
-//     expect(CardTitle3).toBeInTheDocument();
-//     expect(CardTitle4).toBeInTheDocument();
-//     expect(CardTitle5).toBeInTheDocument();
-//     expect(CardTitle6).toBeInTheDocument();
-});
