@@ -26,7 +26,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project was created by ___ during the Spring 2021 session of Codubee. We built this application as a solution to help shelter animals get adopted.
+This project was created by [Brando](https://github.com/zestybean), [Cristian](https://github.com/crissr11), [Kristina](https://github.com/kristinakepic), [Lesli](https://github.com/lesli-dani), [Oziel](https://github.com/Oziel-Sal), during the Spring 2021 session of Codubee. We built this application as a solution to help shelter animals get adopted.
 
 
 <!-- GETTING STARTED -->
