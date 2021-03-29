@@ -14,7 +14,7 @@ import img5 from '../images/team_member5.jpg'
 
 import '../style/team.css'
 
-var image = [String(img4),String(img5),String(img2),String(img3),String(img1)];
+const image = [img4,img5,img2,img3,img1];
 
 class Team extends React.Component{
     constructor(props){
