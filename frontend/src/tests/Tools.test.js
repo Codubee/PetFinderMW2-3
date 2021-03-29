@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import Tools from '../components/Tool/Tools'
+import Tools from '../components/Tools'
 
 test('renders Title of component correctly', () => {
     render(<Tools />);
