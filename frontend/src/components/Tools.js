@@ -3,13 +3,13 @@ import {
     Card, CardBody, CardTitle, Row, Col
   } from 'reactstrap'
     
-import '../../style/Tools.css'
-import reactLogo from './Tool_logos/React_logo.jpg'
-import nodeLogo from './Tool_logos/NodeJS_logo.png'
-import jiraLogo from './Tool_logos/Jira_logo.jpg'
-import postmanLogo from './Tool_logos/Postman_logo.jpg'
-import awsLogo from './Tool_logos/AWS_logo.jpg'
-import herokuLogo from './Tool_logos/Heroku_logo.jpg'
+import '../style/Tools.css'
+import Logo from "../images/React_logo.jpg";
+import Logo2 from "../images/NodeJS_logo.png";
+import Logo3 from "../images/Jira_logo.jpg";
+import Logo4 from "../images/Postman_logo.jpg";
+import Logo5 from "../images/AWS_logo.jpg";
+import Logo6 from "../images/Heroku_logo.jpg";
 
 function Tools() {
     
@@ -17,52 +17,52 @@ function Tools() {
         <div>
             <h2 className="maintitle">Tools Used:</h2>
                 <Row>
-                <Col sm="1" className="centercard">
+                <Col sm="2">
                     <Card>
                         <CardBody className="cardbackground">
                         <CardTitle className="cardtitle" tag="h5">React</CardTitle>
                         </CardBody>
-                        <img src={reactLogo} alt="Card image cap" className="centerlogo"/>
+                        <img src={Logo} alt="Card image cap" className="centerlogo"/>
                     </Card>
                 </Col>
-                <Col sm="1">
+                <Col sm="2">
                     <Card>
                         <CardBody className="cardbackground">
                         <CardTitle className="cardtitle" tag="h5">NodeJS</CardTitle>
                         </CardBody>
-                        <img src={nodeLogo} alt="Card image cap" className="centerlogo"/>
+                        <img src={Logo2} alt="Card image cap" className="centerlogo"/>
                     </Card>
                 </Col>
-                <Col sm="1">
+                <Col sm="2">
                     <Card>
                         <CardBody className="cardbackground">
                         <CardTitle className="cardtitle" tag="h5">Jira</CardTitle>
                         </CardBody>
-                        <img src={jiraLogo} alt="Card image cap" className="centerlogo"/>
+                        <img src={Logo3} alt="Card image cap" className="centerlogo"/>
                     </Card>
                 </Col>
-                <Col sm="1">
+                <Col sm="2">
                     <Card>
                         <CardBody className="cardbackground">
                         <CardTitle className="cardtitle" tag="h5">Postman</CardTitle>
                         </CardBody>
-                        <img src={postmanLogo} alt="Card image cap" className="centerlogo"/>
+                        <img src={Logo4} alt="Card image cap" className="centerlogo"/>
                     </Card>
                 </Col>
-                <Col sm="1">
+                <Col sm="2">
                     <Card>
                         <CardBody className="cardbackground">
                         <CardTitle className="cardtitle" tag="h5">AWS</CardTitle>
                         </CardBody>
-                        <img src={awsLogo} alt="Card image cap" className="centerlogo"/>
+                        <img src={Logo5} alt="Card image cap" className="centerlogo"/>
                     </Card>
                 </Col>
-                <Col sm="1">
+                <Col sm="2">
                     <Card>
                         <CardBody className="cardbackground">
                         <CardTitle className="cardtitle" tag="h5">Heroku</CardTitle>
                         </CardBody>
-                        <img src={herokuLogo} alt="Card image cap" className="center"/>
+                        <img src={Logo6} alt="Card image cap" className="centerlogo"/>
                     </Card>
                 </Col>
                 </Row>

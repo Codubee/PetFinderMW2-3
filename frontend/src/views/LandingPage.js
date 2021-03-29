@@ -1,10 +1,10 @@
 import React from 'react';
-import Tools from '../components/Tool/Tools'
+import Tools from '../components/Tools'
 
 function LandingPage(){
     return(
         <div>
-            { <Tools/> }
+            <Tools/>
             <h1>Landing Page Component</h1>
         </div>
     )
