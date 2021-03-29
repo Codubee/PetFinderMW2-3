@@ -1,8 +1,10 @@
 import React from 'react';
+
 import {
     Card,CardText, CardBody,
     CardTitle, Row, Col, CardLink, CardImg
 } from 'reactstrap';
+
 import img1 from '../images/team_member1.jpg'
 import img2 from '../images/team_member2.jpg'
 import img3 from '../images/team_member3.jpg'
@@ -20,7 +22,6 @@ function Team(){
                 <Col sm = "3" className = "centercard">
                 <Card>
                 <CardImg bottom width = "100%" src = {img4} alt = "Card image camp" className="img"/>
-
                 <CardBody className = "cardbackground">
                         <CardTitle className = "cardtitle" tag = "h5">Lesli Perez</CardTitle>
                         <CardText  className = "cardtext">Major: Computer Engineering</CardText>
@@ -30,10 +31,10 @@ function Team(){
                     </CardBody>
                  </Card>
                 </Col>
+
                 <Col sm = "3" className = "centercard">
                 <Card>
                 <CardImg bottom width = "100%" src = {img5} alt = "Card image camp"/>
-
                 <CardBody className = "cardbackground">
                         <CardTitle className = "cardtitle" tag = "h5">Oziel Salinas</CardTitle>
                         <CardText  className = "cardtext">Major: Computer Engineering</CardText>
@@ -43,6 +44,7 @@ function Team(){
                     </CardBody>
                  </Card>
                 </Col>
+
                 <Col sm = "3" className = "centercard">
                 <Card>
                 <CardImg bottom width = "100%" src = {img2} alt = "Card image camp"/>
@@ -55,6 +57,7 @@ function Team(){
                     </CardBody>
                  </Card>
                 </Col>
+
                 <Col sm = "3" className = "centercard">
                 <Card>
                 <CardImg bottom width = "100%" src = {img3} alt = "Card image camp"/>
@@ -67,6 +70,7 @@ function Team(){
                     </CardBody>
                  </Card>
                 </Col>
+                
                 <Col sm = "3" className = "centercard">
                 <Card>
                     <CardImg bottom width="100%" src = {img1} alt = "Card image camp"/>
