@@ -1,0 +1,51 @@
+[
+    {
+        "personal_data":{
+            "name":"Lesli Perez",
+            "major":"Computer Engineering",
+            "school":"The University of Texas Rio Grande Valley",
+            "year":"Junior",
+            "link": "https://www.linkedin.com/in/lesli-perez/"
+        }
+    },
+    {
+
+        "personal_data":{
+            "name":"Oziel Salinas",
+            "major":"Computer Engineering",
+            "school":"The University of Texas Rio Grande Valley",
+            "year":"Junior",
+            "link": "https://www.linkedin.com/in/oziel-salinas-8a5a5418b/" 
+        }
+    },
+    {
+
+        "personal_data":{
+            "name":"Brando Lugo",
+            "major":"Computer Science",
+            "school":"The University of Texas Rio Grande Valley",
+            "year":"Graduate",
+            "link": "https://www.linkedin.com/in/brandolugo/"
+        }
+    },
+    {
+
+        "personal_data":{
+            "name":"Kristina Kepic",
+            "major":"Computer Science",
+            "school":"The University of Texas at Dallas",
+            "year":"Sophmore",
+            "link": "https://www.linkedin.com/in/kristina-kepic-4557a21b8/"
+        }
+    },
+    {
+        "personal_data":{
+            "name":"Cristian Ruiz",
+            "major":"Software Engineering",
+            "school":"The University of Texas at Dallas",
+            "year":"Junior",
+            "link": "https://www.linkedin.com/in/cristian-ruiz-99b2b4173/"
+        }
+    }
+
+]
