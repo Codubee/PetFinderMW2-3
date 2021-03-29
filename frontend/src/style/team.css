@@ -1,6 +1,6 @@
 .centercard{
     display: block;
-    margin-left: 80px;
+    margin-left: 60px;
 
 }
 
@@ -26,4 +26,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     color: #97D49B;
+}
+
+.container{
+    align-items: center;
 }
