@@ -18,7 +18,8 @@
 
 .navlink:hover {
   font-family: "Montserrat";
-  color: grey;
+  color: lightslategray;
+  opacity: 50%;
 }
 
 .nav {
@@ -28,4 +29,9 @@
 
 .navbar {
   background-color: #e4a58f;
+  color: white;
+}
+
+.navbar-toggler {
+  color: white;
 }

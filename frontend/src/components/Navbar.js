@@ -19,11 +19,14 @@ function NavBar() {
 
   return (
     <>
-      <Navbar className="navbar" dark expand="md">
+      <Navbar className="navbar" expand="md">
         <NavbarBrand className="navbrand">
           <h1>PetFinder</h1>
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle} className="navbar-toggler">
+          Ok
+        </NavbarToggler>
+
         <Collapse isOpen={isOpen} navbar>
           <Nav className="nav" navbar>
             <NavItem>
