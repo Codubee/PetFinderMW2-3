@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaPaw } from "react-icons/fa";
 
 import {
   Navbar,
@@ -23,20 +24,20 @@ function NavBar() {
         <NavbarBrand className="navbrand">
           <h1>PetFinder</h1>
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} className="navbar-toggler">
-          Ok
+        <NavbarToggler onClick={toggle}>
+          <FaPaw class="toggler-icon" />
         </NavbarToggler>
 
         <Collapse isOpen={isOpen} navbar>
           <Nav className="nav" navbar>
             <NavItem>
               <NavLink href="/" className="navlink">
-                <h2>Home</h2>
+                Home
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/match/" className="navlink">
-                <h2>Match</h2>
+                Match
               </NavLink>
             </NavItem>
           </Nav>

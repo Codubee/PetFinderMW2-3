@@ -14,6 +14,7 @@
 .navlink {
   font-family: "Montserrat";
   color: white;
+  font-size: 28px;
 }
 
 .navlink:hover {
@@ -32,6 +33,14 @@
   color: white;
 }
 
-.navbar-toggler {
+.toggler-icon:hover {
   color: white;
+  opacity: 50%;
+  font-size: 36px;
+}
+
+.toggler-icon {
+  color: white;
+  opacity: 75%;
+  font-size: 32px;
 }
