@@ -20,7 +20,8 @@
 .navlink:hover {
   font-family: "Montserrat";
   color: lightslategray;
-  opacity: 50%;
+  opacity: 45%;
+  text-decoration: none;
 }
 
 .nav {
