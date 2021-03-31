@@ -4,7 +4,7 @@ import Team from '../components/team.js';
 function LandingPage(){
     return(
         <div>
-            <Team/>,
+            <Team/>
             <h1>Landing Page Component</h1>
         </div>
     )
