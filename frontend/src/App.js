@@ -1,5 +1,6 @@
 import "./App.css";
 import LandingPage from "./views/LandingPage";
+import Match from "./views/Match";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -10,11 +11,9 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/">
-            {/* Place the components for home here */}
             <LandingPage />
           </Route>
           <Route exact path="/match/">
-            {/* Place the components for match here */}
             <Match />
           </Route>
         </Switch>
@@ -24,12 +23,3 @@ function App() {
 }
 
 export default App;
-
-//DUMMY TEST COMPONENT :DELETE:
-function Match() {
-  return (
-    <div>
-      <h2>Match</h2>
-    </div>
-  );
-}
