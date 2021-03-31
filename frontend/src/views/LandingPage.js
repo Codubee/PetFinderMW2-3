@@ -1,11 +1,11 @@
 import React from 'react';
-import Explanation from '../components/Explanation.js'
+import Team from '../components/team.js';
+
 function LandingPage(){
     return(
         <div>
-            {/* Insert your created components here */}
             <Explanation/>
-            <h1>Landing Page Component</h1>
+            <Team/>
         </div>
     )
 }
