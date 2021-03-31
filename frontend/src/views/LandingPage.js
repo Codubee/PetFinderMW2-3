@@ -1,11 +1,14 @@
 import React from 'react';
-import Team from '../components/team.js';
+import Explantion from '../components/Explanation.js'
+import Team from '../components/team.js'
+import Tools from '../components/Tools'
 
 function LandingPage(){
     return(
         <div>
-            <Explanation/>
+            <Explantion/>
             <Team/>
+            <Tools/>
         </div>
     )
 }
