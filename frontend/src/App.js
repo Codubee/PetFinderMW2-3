@@ -1,6 +1,6 @@
 import "./App.css";
 import LandingPage from "./views/LandingPage";
-import Match from "./views/Match";
+import MatchPage from "./views/MatchPage";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -14,7 +14,7 @@ function App() {
             <LandingPage />
           </Route>
           <Route exact path="/match/">
-            <Match />
+            <MatchPage />
           </Route>
         </Switch>
       </Router>

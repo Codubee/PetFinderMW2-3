@@ -1,7 +1,7 @@
 import React from "react";
 import FadeIn from "react-fade-in";
 
-function Match() {
+function MatchPage() {
   return (
     <FadeIn>
       <div>
@@ -12,4 +12,4 @@ function Match() {
   );
 }
 
-export default Match;
+export default MatchPage;
