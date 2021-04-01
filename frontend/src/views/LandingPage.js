@@ -1,15 +1,19 @@
-import React from "react";
-import FadeIn from "react-fade-in";
+import React from 'react';
+import Explantion from '../components/Explanation.js'
+import Team from '../components/team.js'
+import Tools from '../components/Tools'
+import FadeIn from 'react-fade-in';
 
-function LandingPage() {
-  return (
-    <FadeIn>
-      <div>
-        {/* Insert your created components here */}
-        <h1>Landing Page Component</h1>
-      </div>
-    </FadeIn>
-  );
+function LandingPage(){
+    return(
+      <FadeIn>
+        <div>
+            <Explantion/>
+            <Team/>
+            <Tools/>
+        </div>
+      </FadeIn>
+    );
 }
 
 export default LandingPage;
