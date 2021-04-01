@@ -13,7 +13,7 @@ import {
 
 import { Link } from "react-router-dom";
 
-import "../style/style.css";
+import "../style/NavBar.css";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,22 +27,23 @@ function NavBar() {
           <h1>PetFinder</h1>
         </NavbarBrand>
         <NavbarToggler onClick={toggle}>
-          <FaPaw class="toggler-icon" />
+          <FaPaw className="toggler-icon" />
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="nav" navbar>
             <NavItem>
-              <NavLink>
-                <Link to="/" className="navlink">
-                  Home
-                </Link>
+              <NavLink tag={Link} to="/" className="navlink">
+                Home
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink>
-                <Link to="/match/" className="navlink">
-                  Match
-                </Link>
+              <NavLink
+                tag={Link}
+                id="RouterNavLink"
+                to="/match/"
+                className="navlink"
+              >
+                Match
               </NavLink>
             </NavItem>
           </Nav>
