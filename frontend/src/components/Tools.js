@@ -24,7 +24,7 @@ class Tools extends React.Component {
                 <Row>
                     
                     {titles.map((title, index) =>   
-                        <Col sm="2">
+                        <Col sm="2" key={index}>
                             <Card>
                                 <CardBody className="cardbackground">
                                     <CardTitle className="cardtitle" tag="h5">{title}</CardTitle>
