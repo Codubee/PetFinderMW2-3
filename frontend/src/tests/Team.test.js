@@ -1,6 +1,6 @@
 import React from 'react'
 import {render, screen} from '@testing-library/react'
-import Team from '../components/team'
+import Team from '../components/Team'
 
 test('renders title to be correct', () => {
     render(<Team/>);
