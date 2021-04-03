@@ -17,10 +17,6 @@ import '../style/Team.css'
 const image = [img4,img5,img2,img3,img1];
 
 class Team extends React.Component{
-    constructor(props){
-        super(props)
-    }
-
     render() {
         return (
             <div className = "teamcontainer">
