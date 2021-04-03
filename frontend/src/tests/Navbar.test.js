@@ -17,6 +17,10 @@ test("Navbar is rendered correctly", () => {
 test("Navbar navigates to appropriate views", () => {
   render(<App />);
   fireEvent.click(screen.getByText("Home"));
-  const element = screen.getByText("Landing Page Component");
-  expect(element).toBeInTheDocument();
+  const element1 = screen.getByText("OUR TEAM");
+  expect(element1).toBeInTheDocument();
+
+  fireEvent.click(screen.getByText("Match"));
+  const element2 = screen.getByText("Match Page Component");
+  expect(element2).toBeInTheDocument();
 });
