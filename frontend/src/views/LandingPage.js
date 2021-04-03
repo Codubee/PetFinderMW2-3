@@ -1,6 +1,6 @@
 import React from 'react';
 import Explantion from '../components/Explanation.js'
-import Team from '../components/team.js'
+import Team from '../components/Team.js'
 import Tools from '../components/Tools'
 import FadeIn from 'react-fade-in';
 
