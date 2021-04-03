@@ -23,20 +23,20 @@ class Team extends React.Component{
 
     render() {
         return (
-            <div className = "container">
-                <h2 className="title">OUR TEAM</h2>
+            <div className = "teamcontainer">
+                <h2 className="head_title">OUR TEAM</h2>
                 <Row xs ="3">
                     {data.map((person, index) => (
                         <div key={index}>
-                            <Col sm="8" className="centercard">
+                            <Col sm="9" className="centercard">
                                 <Card>
                                     <CardImg bottom width="100%" src={image[index]} alt="Card image camp" className="img" />
-                                    <CardBody className="cardbackground">
-                                        <CardTitle className="cardtitle" tag="h5">{person.personal_data.name}</CardTitle>
-                                        <CardText className="cardtext">Major: {person.personal_data.major}</CardText>
-                                        <CardText className="cardtext"> School: {person.personal_data.school}</CardText>
-                                        <CardText className="cardtext"> Year: {person.personal_data.year}</CardText>
-                                        <CardLink className="link" href={person.personal_data.link}>Linkedin</CardLink>
+                                    <CardBody className="teambackground">
+                                        <CardTitle className="teamtitle" tag="h5">{person.personal_data.name}</CardTitle>
+                                        <CardText className="teamtext">{person.personal_data.major}</CardText>
+                                        <CardText className="teamtext">{person.personal_data.school}</CardText>
+                                        <CardText className="teamtext">{person.personal_data.year}</CardText>
+                                        <CardLink className="teamlink" href={person.personal_data.link}>Linkedin</CardLink>
                                     </CardBody>
                                 </Card>
                             </Col>
