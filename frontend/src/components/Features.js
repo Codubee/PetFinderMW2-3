@@ -8,7 +8,7 @@ function Features() {
         <div>
 
             <div id="border">
-
+        
                 <h1 id="title" >Features</h1>
                 <br></br>
                 <p id="text">• Matching you with a shelter animal.</p>
