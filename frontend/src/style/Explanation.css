@@ -1,0 +1,15 @@
+
+:root {
+    --blue-green: #A6E2DC;
+}
+.jumbotron{
+    background-color:transparent !important;
+}
+.container{
+    text-align: center;
+}
+.header {
+    font-weight: bold;
+    font-family: "Lucida Handwriting";
+    color: var(--blue-green)
+}

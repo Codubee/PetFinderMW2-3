@@ -1,0 +1,26 @@
+.maintitle {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid #A6E2DC;
+    text-align: center;
+    color:black;
+    background-color: #97D49B;
+}
+
+.cardtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.cardbackground {
+    border: 3px solid #A6E2DC;
+    background-color: #97D49B;
+}
+
+.centerlogo {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    width: 80%;
+}
