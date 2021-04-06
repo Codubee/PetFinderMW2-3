@@ -5,4 +5,5 @@ test('renders learn react link', () => {
    render(<App />);
    const linkElement = screen.getByText('PetFinder');
    expect(linkElement).toBeInTheDocument();
+
 });
