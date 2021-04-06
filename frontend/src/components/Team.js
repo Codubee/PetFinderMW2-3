@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
     Card,CardText, CardBody,
-    CardTitle, Row, Col, CardLink, CardImg } from 'reactstrap';
+    CardTitle, Row, Col, CardLink, CardImg, Container} from 'reactstrap';
 
 import data from '../jsonData/jsonData_team.json'
 
@@ -19,12 +19,11 @@ const image = [img4,img5,img2,img3,img1];
 class Team extends React.Component{
     render() {
         return (
-            <div className = "teamcontainer">
+            <Container className = "teamcontainer">
                 <h2 className="head_title">OUR TEAM</h2>
-                <Row xs ="3">
+                <Row>
                     {data.map((person, index) => (
-                        <div key={index}>
-                            <Col sm="9" className="centercard">
+                            <Col sm="12" md = "4"key = {index}>
                                 <Card>
                                     <CardImg bottom width="100%" src={image[index]} alt="Card image camp" className="img" />
                                     <CardBody className="teambackground">
@@ -36,13 +35,11 @@ class Team extends React.Component{
                                     </CardBody>
                                 </Card>
                             </Col>
-                            <br></br>
-                        </div>
                     )
 
                     )}
                 </Row>
-            </div>
+            </Container>
         )
     }
 }
