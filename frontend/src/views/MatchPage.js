@@ -5,9 +5,9 @@ import DisplayAnimalDescription from '../components/DisplayAnimalDescription';
 function MatchPage() {
   return (
     <FadeIn>
-      <div>
-          
+      <div>  
         <DisplayAnimalDescription />
+        
         <h1>Match Page Component</h1>
       </div>
     </FadeIn>
