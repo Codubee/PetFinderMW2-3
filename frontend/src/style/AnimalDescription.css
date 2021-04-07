@@ -1,5 +1,10 @@
+.animalDescriptionContainer {
+    align-items: center;
+}
+
 .descriptionTitle {
-    font: Arial;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
     color:black;
     
 }
