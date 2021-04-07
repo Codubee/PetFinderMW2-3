@@ -1,33 +1,31 @@
-.centercard{
-    display: block;
-    margin-left: 60px;
-
-}
-
-.cardtitle{
+.teamtitle{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #97D49B;
+    text-align: center;
 }
 
-.cardtext{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: small;
-    color: black;
+.teamtext{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    color: rgb(90, 88, 88);
+    text-align: center;
 }
 
-.cardbackground{
+.teambackground{
+    align-items: center;
     border: 1px outset black;
     background-color: white;
 }
 
-.title{
+.head_title{
     margin-top: 25px;
     margin-bottom: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Lucida Handwriting";
+
     text-align: center;
     color: #97D49B;
 }
 
-.container{
+.teamcontainer{
     align-items: center;
 }
