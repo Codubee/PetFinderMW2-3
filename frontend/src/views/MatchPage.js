@@ -7,7 +7,6 @@ function MatchPage() {
     <FadeIn>
       <div>  
         <DisplayAnimalDescription />
-        
         <h1>Match Page Component</h1>
       </div>
     </FadeIn>

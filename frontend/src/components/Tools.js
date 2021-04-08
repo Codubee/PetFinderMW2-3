@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    Card, CardBody, CardTitle, Row, Col
+    Card, CardBody, CardTitle, Row, Col,Container
   } from 'reactstrap'
     
 import '../style/Tools.css'
@@ -19,12 +19,11 @@ class Tools extends React.Component {
         const titles = ["React", "NodeJS", "Jira", "Postman", "AWS", "Heroku"]
     
         return (
-            <div>
+            <Container>
                 <h2 className="maintitle">Tools Used:</h2>
                 <Row>
-                    
                     {titles.map((title, index) =>   
-                        <Col sm="2" key={index}>
+                        <Col sm="2" md="6" key={index}>
                             <Card>
                                 <CardBody className="cardbackground">
                                     <CardTitle className="cardtitle" tag="h5">{title}</CardTitle>
@@ -34,7 +33,7 @@ class Tools extends React.Component {
                         </Col> 
                     )}
                 </Row>
-            </div>
+            </Container>
         )
     }
 }
