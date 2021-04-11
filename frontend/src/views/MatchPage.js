@@ -1,13 +1,11 @@
 import React from "react";
 import FadeIn from "react-fade-in";
+import AnimalDescription from '../components/AnimalDescription';
 
 function MatchPage() {
   return (
     <FadeIn>
-      <div>
-        {/* Insert your created components here */}
-        <h1>Match Page Component</h1>
-      </div>
+        <AnimalDescription />
     </FadeIn>
   );
 }
