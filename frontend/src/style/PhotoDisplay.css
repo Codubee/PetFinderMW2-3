@@ -1,4 +1,7 @@
- .PhotoDisplay {
+ img {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
