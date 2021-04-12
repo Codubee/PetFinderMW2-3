@@ -8,11 +8,11 @@ import React from "react";
 
 test("Button is rendered correctly", () => {
     render(<MatchPage />);
-    fireEvent.click(screen.getByTitle("YES"))
-    fireEvent.click(screen.getByTitle("NO"))  
+    fireEvent.click(screen.getByTitle("Yes"))
+    fireEvent.click(screen.getByTitle("No"))  
 
-    const yesButton = screen.getByTitle("YES")
-    const noButton = screen.getByTitle("NO")
+    const yesButton = screen.getByTitle("Yes")
+    const noButton = screen.getByTitle("No")
 
     expect(yesButton).toBeInTheDocument();
     expect(noButton).toBeInTheDocument();
