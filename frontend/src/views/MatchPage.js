@@ -11,11 +11,11 @@ function MatchPage() {
       <div>
         <Container >
           <ButtonToggle color="white">
-            <FaHeart className="button_design" />
+            <FaHeart className="button_design" title= "YES"/>
           </ButtonToggle>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <ButtonToggle color="white">
-            <FaTimes className="button_design" />
+            <FaTimes className="button_design" title= "NO" />
           </ButtonToggle>
         </Container>
 
