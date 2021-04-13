@@ -1,5 +1,6 @@
 import React from "react";
 import FadeIn from "react-fade-in";
+import AnimalDescription from '../components/AnimalDescription';
 import {ButtonToggle, Container } from "reactstrap";
 import {FaHeart, FaTimes} from 'react-icons/fa'
 
@@ -8,7 +9,7 @@ import '../style/Buttons.css'
 function MatchPage() {
   return (
     <FadeIn>
-      <div>
+        <AnimalDescription />
         <Container >
           <ButtonToggle color="white">
             <FaHeart className="button_design" title= "Yes"/>
@@ -18,9 +19,8 @@ function MatchPage() {
             <FaTimes className="button_design" title= "No" />
           </ButtonToggle>
         </Container>
-
-      </div>
     </FadeIn>
+
   );
 }
 
