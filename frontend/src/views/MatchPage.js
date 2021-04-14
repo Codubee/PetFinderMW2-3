@@ -1,7 +1,7 @@
 import React from "react";
 import FadeIn from "react-fade-in";
 import AnimalDescription from '../components/AnimalDescription';
-import {ButtonToggle, Container } from "reactstrap";
+import {Button, Container } from "reactstrap";
 import {FaHeart, FaTimes} from 'react-icons/fa'
 
 import '../style/Buttons.css'
@@ -11,13 +11,13 @@ function MatchPage() {
     <FadeIn>
         <AnimalDescription />
         <Container >
-          <ButtonToggle color="white">
+          <Button color="">
             <FaHeart className="button_design" title= "Yes"/>
-          </ButtonToggle>
+          </Button>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <ButtonToggle color="white">
+          <Button color="">
             <FaTimes className="button_design" title= "No" />
-          </ButtonToggle>
+          </Button>
         </Container>
     </FadeIn>
 
