@@ -3,16 +3,28 @@ import FadeIn from "react-fade-in";
 import PhotoDisplay from "../components/PhotoDisplay";
 
 import animalImg from "../images/DisplayTest.jpg"
+import AnimalDescription from '../components/AnimalDescription';
+import {Button, Container } from "reactstrap";
+import {FaHeart, FaTimes} from 'react-icons/fa'
+
+import '../style/Buttons.css'
 
 function MatchPage() {
   return (
     <FadeIn>
-      <div>
-        {/* Insert your created components here */}
-        <PhotoDisplay animalImg={animalImg} alt={"Image failed to load"}/>
-        <h1>Match Page Component</h1>
-      </div>
+        <Container >
+          <PhotoDisplay animalImg={animalImg} alt={"Image failed to load"}/>
+          <AnimalDescription />
+          <Button color="">
+            <FaHeart className="button_design" title= "Yes"/>
+          </Button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Button color="">
+            <FaTimes className="button_design" title= "No" />
+          </Button>
+        </Container>
     </FadeIn>
+
   );
 }
 

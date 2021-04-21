@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.navbrand {
+  font-family: "Pacifico";
+  color: white;
+}
+
+.navbrand:hover {
+  font-family: "Pacifico";
+  color: white;
+}
+
+.navlink {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 28px;
+}
+
+.navlink:hover {
+  font-family: "Montserrat";
+  color: lightslategray;
+  opacity: 45%;
+  text-decoration: none;
+}
+
+.nav {
+  width: 100%;
+  height: 54px;
+}
+
+.navbar {
+  background-color: #e4a58f;
+  color: white;
+}
+
+.toggler-icon:hover {
+  color: white;
+  opacity: 50%;
+  font-size: 36px;
+}
+
+.toggler-icon {
+  color: white;
+  opacity: 75%;
+  font-size: 32px;
+}

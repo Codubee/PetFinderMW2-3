@@ -1,0 +1,31 @@
+.teamtitle{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #97D49B;
+    text-align: center;
+}
+
+.teamtext{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    color: rgb(90, 88, 88);
+    text-align: center;
+}
+
+.teambackground{
+    align-items: center;
+    border: 1px outset black;
+    background-color: white;
+}
+
+.head_title{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-family: "Lucida Handwriting";
+
+    text-align: center;
+    color: #97D49B;
+}
+
+.teamcontainer{
+    align-items: center;
+}
