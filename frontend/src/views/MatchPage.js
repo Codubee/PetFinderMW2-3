@@ -18,7 +18,7 @@ function MatchPage() {
         <Button color="">
           <FaHeart className="button_design" title="Yes" />
         </Button>
-
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Button color="">
           <FaTimes className="button_design" title="No" />
         </Button>
