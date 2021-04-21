@@ -13,7 +13,7 @@ import {
 
 import { Link } from "react-router-dom";
 
-import '../style/NavBar.css'
+import "../style/Navbar.css";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
