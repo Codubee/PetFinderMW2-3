@@ -31,7 +31,7 @@ app.get('/exampleApi', function (req, res) {
 app.get('/getMatches', function (req, res) {
 
     console.log(req.query)
-    let id = req.query.id;
+    let id = req.query.id
     axios.get('https://codubee-projects-api.herokuapp.com/animal/getmatches?id='+id)
     .then(function (herokuResponse) {
         console.log(herokuResponse.data)
