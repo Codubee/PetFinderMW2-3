@@ -33,9 +33,9 @@ app.get('/getMatches', function (req, res) {
     console.log(req.query)
     let id = req.query.id;
     axios.get('https://codubee-projects-api.herokuapp.com/animal/getmatches?id='+id)
-    .then(function (response) {
-        console.log(response.data)
-        res.status(200).json(response.data)
+    .then(function (herokuResponse) {
+        console.log(herokuResponse.data)
+        res.status(200).json(herokuResponse.data)
     })
     .catch(function (error) {
         console.log(error)
