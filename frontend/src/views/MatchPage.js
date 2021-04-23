@@ -8,7 +8,7 @@ import {Button, Container } from "reactstrap";
 import {FaHeart, FaTimes} from 'react-icons/fa'
 import DisplayMatches from '../components/DisplayMatches'
 
-import '../style/Buttons.css'
+import "../style/Buttons.css";
 
 function MatchPage() {
   return (
@@ -19,14 +19,12 @@ function MatchPage() {
           <Button color="">
             <FaHeart className="button_design" title= "Yes"/>
           </Button>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Button color="">
             <FaTimes className="button_design" title= "No" />
           </Button>
           <DisplayMatches/>
         </Container>
     </FadeIn>
-
   );
 }
 
