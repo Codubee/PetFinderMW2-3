@@ -1,0 +1,19 @@
+#title1
+{
+    font-family:  Montserrat Regular;
+    color: var(--salmon);
+    text-align: center;
+    font-weight: bolder;
+}
+
+#body1
+{
+    font-family:  Montserrat Light;
+    font-weight: bolder;
+}
+
+#body2
+{
+    font-family:  Montserrat Light;
+}
+
