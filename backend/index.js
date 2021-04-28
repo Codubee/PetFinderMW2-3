@@ -57,9 +57,9 @@ app.post('/addAnimal', function (req, res) {
         }
     }
     axios.post('https://codubee-projects-api.herokuapp.com/animal/addAnimal', body)
-    .then(function(response){
-        console.log(response.data);
-        res.status(200).json(response.data);
+    .then(function(heroku_response){
+        console.log(heroku_response.data);
+        res.status(200).json(heroku_response.data);
     })
     .catch(function (error){
         console.log(error)
