@@ -1,6 +1,6 @@
-const express = require('express')
-const app = express()
-const axios = require('axios');
+const express = require("express");
+const app = express();
+const axios = require("axios");
 app.use(express.json());
 
 
@@ -9,9 +9,22 @@ app.use(express.json());
     when building your APIs. I suggest that you try to understand
     what each line is doing. Reach out if you have any questions.
 */
-app.get('/exampleApi', function (req, res) {
+app.post('/addAnimal', function (req, res) {
 
-    axios.get('https://api.agify.io?name=Mike')
+    console.log(req.body)
+
+    const body = {
+        id : req.body.id,
+        record : {
+            name : req.body.name,
+            type : req.body.type,
+            sex  : req.body.sex,
+            shelter_name : req.body.shelter_name,
+            adoption_url : req.body.adoption_url,
+            image : req.body.image
+        }
+    }
+    axios.post('https://codubee-projects-api.herokuapp.com/animal/addAnimal', body)
     .then(function (response) {
         // handle success and send back a 200 response with the data
         console.log(response.data);
