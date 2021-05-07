@@ -27,12 +27,8 @@ app.get("/exampleApi", function (req, res) {
 });
 
 app.get("/getAnimalDescription", function (req, res) {
-  axios
-    .get(
-      "https://codubee-projects-api.herokuapp.com/animal/getAnimalDescription"
-    )
+  axios.get("https://codubee-projects-api.herokuapp.com/animal/getAnimalDescription")
     .then((herokuResponse) => {
-      console.log(herokuResponse.data);
       res.status(200).json(herokuResponse.data);
     })
     .catch(function (error) {
@@ -68,4 +64,29 @@ app.post('/addAnimal', function (req, res) {
 
 })
 
-app.listen(8080, () => console.log("Listening at locahost:8080"));
+// To get all matches from a specific user using their id
+app.get('/getMatches', function (req, res) {
+
+    let id = req.query.id
+    axios.get('https://codubee-projects-api.herokuapp.com/animal/getmatches?id='+id)
+    .then(function (herokuResponse) {
+        res.status(200).json(herokuResponse.data)
+    })
+    .catch(function (error) {
+        console.log(error)
+        res.status(400).json({error:"An error has occurred"})
+    })
+})
+//To Get weather
+app.get('/getWeather', function (req,res) {
+  axios.get('https://codubee-projects-api.herokuapp.com/translate/getWeather')
+  .then(function (herokuResponse) {
+    res.status(200).json(herokuResponse.data)
+  })
+  .catch(function (error) {
+    console.log(error)
+    res.status(400).json({error: "An error has occured"})
+  })
+})
+
+app.listen(8080, () => console.log('Listening at locahost:8080'))
