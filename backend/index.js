@@ -77,6 +77,18 @@ app.get('/getMatches', function (req, res) {
         res.status(400).json({error:"An error has occurred"})
     })
 })
+
+app.get('/getWeatherDescription', function (req,res) {
+  axios.get('https://codubee-projects-api.herokuapp.com/translate/getWeatherDescription')
+  .then(function (herokuResponse) {
+    res.status(200).json(herokuResponse.data)
+  })
+  .catch(function (error) {
+    console.log(error)
+    res.status(400).json({error: "An error occured"})
+  })
+})
+
 //To Get weather
 app.get('/getWeather', function (req,res) {
   axios.get('https://codubee-projects-api.herokuapp.com/translate/getWeather')
