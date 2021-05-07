@@ -37,6 +37,32 @@ app.get("/getAnimalDescription", function (req, res) {
     });
 });
 
+app.post('/addAnimal', function (req, res) {
+
+    console.log(req.body)
+
+    const body = {
+        id : req.body.id,
+        record : {
+            name : req.body.name,
+            type : req.body.type,
+            sex  : req.body.sex,
+            shelter_name : req.body.shelter_name,
+            adoption_url : req.body.adoption_url,
+            image : req.body.image
+        }
+    }
+    axios.post('https://codubee-projects-api.herokuapp.com/animal/addAnimal', body)
+    .then(function(heroku_response){
+        console.log(heroku_response.data);
+        res.status(200).json(heroku_response.data);
+    })
+    .catch(function (error){
+        console.log(error)
+        res.status(400).json({error: "An error occured"});
+    })
+
+})
 
 // To get all matches from a specific user using their id
 app.get('/getMatches', function (req, res) {
@@ -60,6 +86,18 @@ app.get('/getWeatherDescription', function (req,res) {
   .catch(function (error) {
     console.log(error)
     res.status(400).json({error: "An error occured"})
+  })
+})
+
+//To Get weather
+app.get('/getWeather', function (req,res) {
+  axios.get('https://codubee-projects-api.herokuapp.com/translate/getWeather')
+  .then(function (herokuResponse) {
+    res.status(200).json(herokuResponse.data)
+  })
+  .catch(function (error) {
+    console.log(error)
+    res.status(400).json({error: "An error has occured"})
   })
 })
 
