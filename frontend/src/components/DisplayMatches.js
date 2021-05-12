@@ -1,12 +1,28 @@
 import React from 'react'
 import { Table } from 'reactstrap'
-import data from '../jsonData/jsonData_DisplayMatches.json'
+//import data from '../jsonData/jsonData_DisplayMatches.json'
 import '../style/DisplayMatches.css'
+import axios from 'axios'
 
 class DisplayMatches extends React.Component{
     constructor(props){
         super(props)
-        console.log(data)
+        this.state = {
+           data: []
+        }
+
+        this.triggerApi = this.triggerApi.bind(this)
+    }
+
+    //API call to getMatches
+    triggerApi() {
+        axios.get("/getMatches?id=99")
+        .then((response) => {
+            console.log(response.data)
+            this.setState({
+                data: response.data
+            })
+        })
     }
 
     render() {
@@ -15,6 +31,9 @@ class DisplayMatches extends React.Component{
             <div className = "container">
             <div>
             <h1 id="title1">Your Matches!</h1>
+
+            <button onClick={this.triggerApi}>Click me to update your matches!</button>
+
             <Table hover>
                 
                 <thead>
@@ -28,7 +47,7 @@ class DisplayMatches extends React.Component{
                     </tr>
                 </thead>
 
-                {data.map((object, index) => (
+                {this.state.data.map((object, index) => (
                     <tbody>
                         <tr id = "body2">
                             
