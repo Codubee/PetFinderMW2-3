@@ -1,6 +1,5 @@
 import React from 'react'
 import { Table } from 'reactstrap'
-//import data from '../jsonData/jsonData_DisplayMatches.json'
 import '../style/DisplayMatches.css'
 import axios from 'axios'
 
