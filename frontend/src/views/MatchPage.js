@@ -7,10 +7,22 @@ import AnimalDescription from '../components/AnimalDescription';
 import { Button, Container } from "reactstrap";
 import { FaHeart, FaTimes } from 'react-icons/fa'
 import DisplayMatches from '../components/DisplayMatches'
+import axios from 'axios'
 
 import "../style/Buttons.css";
 
 class MatchPage extends React.Component {
+
+  componentDidMount() {
+    axios.get("https://codubee-projects-api.herokuapp.com/animal/getAnimalDescription")
+    .then((response) => {
+      console.log(response.data); 
+    })
+    .catch((error)=>{
+      console.log(error)
+    })
+  }
+
   render() {
     return (
       <FadeIn>
