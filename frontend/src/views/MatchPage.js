@@ -14,7 +14,7 @@ import "../style/Buttons.css";
 class MatchPage extends React.Component {
 
   componentDidMount() {
-    axios.get("https://codubee-projects-api.herokuapp.com/animal/getAnimalDescription")
+    axios.get("/getAnimalDescription")
     .then((response) => {
       console.log(response.data); 
     })
