@@ -1,53 +1,70 @@
 import React from 'react'
-import { Table } from 'reactstrap'
-import data from '../jsonData/jsonData_DisplayMatches.json'
+import { Button, Table } from 'reactstrap'
 import '../style/DisplayMatches.css'
+import axios from 'axios'
 
-class DisplayMatches extends React.Component{
-    constructor(props){
+class DisplayMatches extends React.Component {
+    constructor(props) {
         super(props)
-        console.log(data)
+        this.state = {
+            data: []
+        }
+        this.triggerApi = this.triggerApi.bind(this)
+    }
+
+    //API call to getMatches
+    triggerApi() {
+        axios.get("/getMatches?id=" + this.props.userId)
+            .then((response) => {
+                console.log(response.data)
+                this.setState({
+                    data: response.data
+                })
+            })
     }
 
     render() {
 
         return (
-            <div className = "container">
-            <div>
-            <h1 id="title1">Your Matches!</h1>
-            <Table hover>
-                
-                <thead>
-                    <tr id ="body1">
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Type</th>
-                        <th>Sex</th>
-                        <th>Shelter</th>
-                        <th>Adoption Link</th>
-                    </tr>
-                </thead>
+            <div className="container">
+                <div>
+                    <h1 id="title1">Your Matches!</h1>
 
-                {data.map((object, index) => (
-                    <tbody>
-                        <tr id = "body2">
-                            
-                        <td className = "font-weight-bold">{object.id}</td>
-                        <td> {object.name}</td>
-                        <td> {object.type}</td> 
-                        <td>{object.sex}</td>
-                        <td>{object.shelter_name}</td> 
-                        <td>{object.adoption_url}</td>
-                        </tr>
-                    </tbody>
-                ))
-                }
+                    <Button className="m-lg" onClick={this.triggerApi}>Click me to update your matches!</Button>
 
-            </Table>
-            </div>
+                    <Table hover>
+
+                        <thead>
+                            <tr id="body1">
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Sex</th>
+                                <th>Shelter</th>
+                                <th>Adoption Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {this.state.data.map((object, index) => (
+
+                                <tr id="body2" key={index}>
+
+                                    <td className="font-weight-bold">{object.id}</td>
+                                    <td> {object.name}</td>
+                                    <td> {object.type}</td>
+                                    <td>{object.sex}</td>
+                                    <td>{object.shelter_name}</td>
+                                    <td>{object.adoption_url}</td>
+                                </tr>
+
+                            ))
+                            }
+                        </tbody>
+                    </Table>
+                </div>
             </div>
         )
     }
 }
-    export default DisplayMatches;
+export default DisplayMatches;
 
