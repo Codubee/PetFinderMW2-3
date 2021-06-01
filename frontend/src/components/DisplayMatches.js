@@ -14,11 +14,16 @@ class DisplayMatches extends React.Component {
 
     //API call to getMatches
     triggerApi() {
+        this.setState({error:{}})
         axios.get("/getMatches?id=" + this.props.userId)
             .then((response) => {
-                console.log(response.data)
                 this.setState({
                     data: response.data
+                })
+            })
+            .catch((err)=>{
+                this.setState({
+                    error: err.response.data
                 })
             })
     }
@@ -31,7 +36,10 @@ class DisplayMatches extends React.Component {
                     <h1 id="title1">Your Matches!</h1>
 
                     <Button className="m-lg" onClick={this.triggerApi}>Click me to update your matches!</Button>
-
+                    {
+                        this.state.error &&
+                        <h4>There was an error with your request</h4>
+                    }
                     <Table hover>
 
                         <thead>
