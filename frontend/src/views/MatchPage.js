@@ -15,7 +15,7 @@ class MatchPage extends React.Component {
 
   constructor(props){
     super(props)
-    this.state = {description:{}}
+    this.state = {description:{},userId:Math.floor(Math.random() * 100) + 1}
     this.getMatches = this.getMatches.bind(this)
     this.yesClick = this.yesClick.bind(this)
     this.noClick = this.noClick.bind(this)
@@ -57,7 +57,7 @@ class MatchPage extends React.Component {
           <Button color= "" onClick={this.noClick}>
             <FaTimes className="button_design" title="No" />
           </Button>
-          <DisplayMatches />
+          <DisplayMatches userId={this.state.userId} />
         </Container>
       </FadeIn>
     );
