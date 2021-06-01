@@ -11,6 +11,12 @@ import DisplayMatches from '../components/DisplayMatches'
 import "../style/Buttons.css";
 
 class MatchPage extends React.Component {
+
+  constructor(props){
+    super(props)
+    this.state = {userId:Math.floor(Math.random() * 100) + 1}
+  }
+
   render() {
     return (
       <FadeIn>
@@ -23,7 +29,7 @@ class MatchPage extends React.Component {
           <Button color="">
             <FaTimes className="button_design" title="No" />
           </Button>
-          <DisplayMatches />
+          <DisplayMatches userId={this.state.userId} />
         </Container>
       </FadeIn>
     );
